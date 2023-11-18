@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.reyajedrez.modelo;
 
+import java.util.Objects;
+
 public class Posicion {
     private int fila;
     private char columna;
@@ -42,6 +44,19 @@ public class Posicion {
     //Constructor copia
     public Posicion(Posicion otraPosicion){
         this(otraPosicion.getFila(), otraPosicion.getColumna());
+    }
+
+    @Override
+    public boolean equals(Objects obj){
+        if (this == obj) return true;
+        if (obj==null || !getClass().equals(obj.getClass())) return false;
+        Posicion otraPosicion = (Posicion) obj;
+        return fila== otraPosicion.fila && columna == otraPosicion.columna;
+    }
+
+    @Override
+    public int hasCode(){
+        return Objects.hash(fila,columna);
     }
 
 
