@@ -46,12 +46,16 @@ public class Posicion {
         this(otraPosicion.getFila(), otraPosicion.getColumna());
     }
 
-    @Override
+    /*@Override
     public boolean equals(Objects obj){
-        if (this == obj) return true;
-        if (obj==null || !getClass().equals(obj.getClass())) return false;
-        Posicion otraPosicion = (Posicion) obj;
-        return fila== otraPosicion.fila && columna == otraPosicion.columna;
+        if (this == obj){
+            return true;
+        }
+        if (obj==null || !getClass().equals(obj.getClass())){
+            return false;
+        }
+        Posicion posicion = (Posicion) obj;
+        return fila==posicion.fila && columna==posicion.columna;
     }
 
     @Override
@@ -64,5 +68,5 @@ public class Posicion {
         return "fila= " + fila + ", columna= " + columna;
     }
 
-
+*/
 }
