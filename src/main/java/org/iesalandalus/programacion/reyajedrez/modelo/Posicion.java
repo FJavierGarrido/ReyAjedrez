@@ -59,5 +59,10 @@ public class Posicion {
         return Objects.hash(fila,columna);
     }
 
+    //Método toString
+    public String toString(){
+        return "fila= " + fila + ", columna= " + columna;
+    }
+
 
 }
