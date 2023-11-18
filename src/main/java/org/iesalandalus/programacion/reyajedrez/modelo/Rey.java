@@ -6,6 +6,7 @@ public class Rey {
     private Posicion posicion;
     private int totalMovimientos;
 
+
     //Método getColor
     public Color getColor() {
         return color;
@@ -29,7 +30,7 @@ public class Rey {
     //Método set Posicion
     public void setPosicion(Posicion posicion) {
         if (posicion==null){
-            throw new NullPointerException("La posición no puede ser nula.")
+            throw new NullPointerException("La posición no puede ser nula.");
         }
         this.posicion = posicion;
     }
@@ -44,8 +45,15 @@ public class Rey {
     //Método set totalMovimientos
     public void setTotalMovimientos(int totalMovimientos) {
         if (totalMovimientos<0){
-            throw IllegalArgumentException("Tiene que haber algún movimiento");
+            throw new IllegalArgumentException("Tiene que haber algún movimiento");
         }
         this.totalMovimientos = totalMovimientos;
     }
+
+    public Rey(){
+        this.color=Color.BLANCO;
+        this.posicion= new Posicion(1,'e');
+        this.totalMovimientos=0;
+    }
+
 }
