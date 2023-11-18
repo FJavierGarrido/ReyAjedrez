@@ -33,6 +33,7 @@ public class Consola {
         return opcion;
     }
 
+
     public static Color elegirOpcion(){
         Color color=null;
         int opcion;
@@ -54,7 +55,7 @@ public class Consola {
         }else {
             color = Color.NEGRO;
         }
-
+        System.out.println(color);
         return color;
     }
 

@@ -12,6 +12,7 @@ public class MainApp {
 
         int opcion;
 
+
         do {
             mostrarMenu();
             opcion = elegirOpcionMenu();
@@ -21,11 +22,13 @@ public class MainApp {
     }
 
     private static void ejecutarOpcion(int opcion) {
+
         switch (opcion) {
             case 1:
                 crearReyDefecto();
                 break;
             case 2:
+                crearReyColor();
                 break;
             case 3:
                 break;
@@ -41,9 +44,14 @@ public class MainApp {
 
     }
 
+    private static void crearReyColor() {
+        rey=new Rey(elegirOpcion());
+        System.out.println("El rey elegido es: "+rey);
+    }
+
 
     private static void crearReyDefecto() {
-        rey = new Rey(); // Esto asume que la clase Rey tiene un constructor por defecto
+        rey = new Rey();
         System.out.println("Rey creado por defecto.");
     }
 }
