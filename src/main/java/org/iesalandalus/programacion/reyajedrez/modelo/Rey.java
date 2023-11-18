@@ -64,6 +64,7 @@ public class Rey {
         }else{
             this.posicion=new Posicion(8,'e');
         }
-
+        this.color=color;
+        this.totalMovimientos=0;
     }
 }
