@@ -50,10 +50,20 @@ public class Rey {
         this.totalMovimientos = totalMovimientos;
     }
 
+    //Constructor Rey posición (1,e)
     public Rey(){
         this.color=Color.BLANCO;
         this.posicion= new Posicion(1,'e');
         this.totalMovimientos=0;
     }
 
+    //Constructor Rey según color (Blanco 1e, Negro 8e)
+    public Rey(Color color){
+        if(color==Color.BLANCO){
+            this.posicion=new Posicion(1,'e');
+        }else{
+            this.posicion=new Posicion(8,'e');
+        }
+
+    }
 }
