@@ -2,6 +2,8 @@ package org.iesalandalus.programacion.reyajedrez;
 
 import org.iesalandalus.programacion.reyajedrez.modelo.*;
 
+import static org.iesalandalus.programacion.reyajedrez.Consola.*;
+
 public class MainApp {
 
     private static Rey rey;
@@ -16,6 +18,9 @@ public class MainApp {
             ejecutarOpcion(opcion);
 
         } while (opcion != 4);
+    }
+
+    private static void ejecutarOpcion(int opcion) {
     }
 
 
