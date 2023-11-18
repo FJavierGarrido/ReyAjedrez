@@ -31,6 +31,7 @@ public class MainApp {
                 crearReyColor();
                 break;
             case 3:
+                mover();
                 break;
             case 4:
                 break;
@@ -44,9 +45,14 @@ public class MainApp {
 
     }
 
+    private static void mover() {
+        Direccion direccionElegida = Consola.mostrarMenuDirecciones();
+        System.out.println("La dirección elegida es: " + direccionElegida);
+    }
+
     private static void crearReyColor() {
         rey=new Rey(elegirOpcion());
-        System.out.println("El rey elegido es: "+rey);
+        System.out.println("El rey elegido es: "+ rey);
     }
 
 
