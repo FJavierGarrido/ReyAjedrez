@@ -10,4 +10,10 @@ public enum Color {
     private Color(String cadenaAMostrar){
         this.cadenaAMostrar=cadenaAMostrar;
     }
+
+    //Método toString
+    @Override
+    public String toString(){
+        return cadenaAMostrar;
+    }
 }
