@@ -31,8 +31,13 @@ public class Posicion {
             throw new IllegalArgumentException("La columna tiene que estar entre a y h.");
         }
         this.columna = columna;
-
-
-
     }
+
+    //Constructor que valida fila y columna
+    public Posicion(int fila,char columna){
+        setFila(fila);
+        setColumna(columna);
+    }
+
+
 }
